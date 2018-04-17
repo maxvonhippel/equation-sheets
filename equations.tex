@@ -1,0 +1,67 @@
+\documentclass{minimal}
+\usepackage{multicol,amsmath}
+ 
+\begin{document}
+\begin{multicols}{2}
+\noindent 
+Angular displacement $\Delta \phi = \phi_f - \phi_i$\\
+Avg. angular speed $\overline{\omega} = \frac{\Delta \phi}{\Delta t}$\\
+Inst. angular speed $\omega = \frac{d \phi}{d t}$\\
+Avg. angular acceleration $\overline{\alpha} = \frac{\Delta \omega}{\Delta t}$\\
+Inst. angular acceleration $\alpha = \frac{d \omega}{d t}$\\
+\(\omega = \omega_0 + \alpha t\)\\
+\(\phi = \phi_0 + \omega_0 t + \frac{1}{2}\alpha t^2\)\\
+\(\omega^2 = \omega_{0}^2 + 2\alpha(\phi - \phi_0)\)\\
+\(v = v_0 + at\)\\
+\(x = x_0 + v_0 t + \frac{1}{2}a t^2\)\\
+\(v^2 = v_{0}^2 + 2a(x - x_0)\)\\
+\(I = \int_{body}{}r^2 dm\)\\
+Rotational kinetic energy: \(K_r = \frac{1}{2}I\omega^2\)\\
+Translational kinetic energy: \(K_t = \frac{1}{2}mv^2\)\\
+Parallel Axis Theorem: \(I - I_{cm} + MD^2\)\\
+Torque: \(\tau = rFsin\phi = rF_t = I\alpha\)\\
+``Rolling without slipping'' occurs \(\iff\)\\
+\([ S_{cm} = R\phi \land v_{cm} = R\omega \land a_{cm} = R\alpha ]\)\\
+Rolling motion: \(K = \frac{1}{2}I_{cm}\omega^2 + \frac{1}{2}mv_{cm}^2\)\\
+\(= \frac{1}{2}(I_{cm} + MR^2)\omega^2 = \frac{1}{2}(\frac{I_{cm}}{R^2} + M)v_{cm}^2\)\\
+Angular Momentum: \(L = I\omega (= rmv)\)\\
+Gravity: \(F_g = G\frac{m_1 m_2}{r^2} \land g = \frac{GM}{R^2}\)\\
+\(U_{g}(r) = -G\frac{m_1 m_2}{r}\)\\
+\(v_{escape} = \sqrt{\frac{2GM_{planet}}{R}}\)\\
+Kepler's Laws:\\
+$a$ is semimajor axis ($\frac{1}{2}$ of ``long diameter'')\\
+$b$ is semiminor axis ($\frac{1}{2}$ of ``short diameter'')\\
+$F_1$ and $F_2$ are foci of the ellipse, each located c\\
+distance from the other, where $c = \sqrt{a^2 - b^2}$\\
+Ellipse is a circle $\iff a = b = R$\\
+Kepler's 1st Law: \(\frac{x^2}{a^2} + \frac{y^2}{b^2} = c^2\)\\ 
+Kepler's 2nd Law: Area swept by radius vector in time $\Delta t$\\
+\(= A_1 = \frac{\Delta t}{2m}L\), where \(L = r \times mv = r \times p\)\\
+Kepler's 3rd Law: \(T^2 = \frac{r \pi^2}{GM}r^3\)\\
+Mass on a Spring: \(m\frac{d^2 x(t)}{dt^2} + kx(t) = 0\)\\
+\(x(t) = A cos(\omega t + \phi)\)\\
+$A$ is amplitude, $\omega$ is angular frequency, $\phi$ is phase\\
+Spring-Mass: \(\omega = \sqrt{\frac{k}{m}}\)\\
+Simple Pendulum: \(\omega = \sqrt{\frac{g}{l}}\)\\
+Physical Pendulum: \(\omega = \sqrt{\frac{mgL_{cm}}{I}}\)\\
+Period of Oscillation: \(T = \frac{2\pi}{\omega}\)\\
+Frequency of Oscillation: \(f = \frac{1}{T} = \frac{\omega}{2\pi}\) Hz ($s^{-1}$)\\
+Total energy of simple harmonic motion:\\
+\(K(t) = \frac{1}{2}m\omega^2 A^2 sin^2 (\omega t + \phi)\)\\
+\(U(t) = \frac{1}{2}kA^2 cos^2 (\omega t + \phi)\)\\
+\(E_{net}(t) = \frac{1}{2}kA^2\)\\
+For simple pendulum, \\
+\(F_{tan} = -mgsin(\phi) \land \alpha = -\frac{g}{l}sin(\phi)\)\\
+For \textit{small} $\phi$, we can say that $sin(\phi) \approx \phi$\\
+Dampered Harmonic Oscillator: \(\frac{d^2 x}{dt^2} + \frac{b}{m}\frac{dx}{dt} + \frac{k}{m}x = 0\)\\
+\(\implies x(t) = Ae^{-\frac{b}{2m}t}cos(\omega t + \phi)\)\\
+\(\implies \omega = (\omega_{0}^2 - (\frac{b}{2m})^2)^{0.5}\)\\
+\(\implies \omega_0 = \sqrt{\frac{k}{m}}\), which is the ``natural frequency''\\
+For $b > 2\sqrt{mk}$, $x$ decays to 0 without a single oscillation\\
+We call this an ``overdamped oscillator''\\
+The underdamped oscillator is: \\
+\(x(t) = e^{-\gamma t}acos(\omega_0 t - \alpha)\)\\
+For a damped driven oscillator,\\
+\(A = \frac{F_0}{m\sqrt{(\omega^2 - \omega_{0}^2)^2 + (\frac{b\omega}{m})^2}}\)
+\end{multicols}
+\end{document}
